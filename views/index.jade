@@ -1,4 +1,18 @@
 extends layout
 
 block content
-	h1 Hello Boulder!
+	.container
+	h1 Ask Jeeves!
+		//- The search form
+		form#search-form
+			.form-group
+				input#search-text(type="text", placeholder="Enter Search Term(s)", name="search")
+				input#search-button.btn.btn-success.btn-lg(type="submit", placeholder="Submit", name="submit")
+
+	//- Placeholder for results
+	#results
+
+	//- Handlebars template for results
+	script#result-template(type="text/x-handlebars-template")
+		h1 {{title}}
+		h3: em {{desc}}

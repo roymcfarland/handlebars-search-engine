@@ -1,4 +1,4 @@
-module.exports = {
+var searchData = {
 	"programming" : {
 		"Python" : {
 			"desc" : "a high-level general-purpose programming language."
@@ -34,3 +34,5 @@ module.exports = {
 		}
 	}
 };
+
+module.exports = searchData;
